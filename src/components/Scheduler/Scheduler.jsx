@@ -2,7 +2,7 @@ import './index.scss'
 import editButton from '../../assets/edit.svg'
 import deleteButton from '../../assets/delete.svg'
 import addButton from '../../assets/add.svg'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Modal from '../Modal/Modal';
 
 const Scheduler = ({ tasks }) => {
