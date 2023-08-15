@@ -10,11 +10,6 @@ const Scheduler = ({ tasks }) => {
     const [task, setTask] = useState(tasks);
     const [showModal, setShowModal] = useState(false);
     const [modalData, setModalData] = useState({});
-    const [newTaskTitle, setNewTaskTitle] = useState('');
-
-    useEffect(() => {
-        setTask(tasks);
-    }, [tasks]);
 
     const handleCheckboxChange = (index) => {
         const updatedTasks = [...task];
