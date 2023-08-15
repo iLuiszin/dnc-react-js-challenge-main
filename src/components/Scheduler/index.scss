@@ -1,0 +1,88 @@
+@use '../../sass/variables' as *;
+
+.scheduler {
+    height: 100vh;
+    color: $white;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        color: $white;
+    }
+
+
+
+
+    table {
+        font-size: 16px;
+        width: 70%;
+        border-collapse: collapse;
+        text-align: center;
+
+        thead {
+            border-bottom: 2px solid $white;
+        }
+
+        th {
+            height: 70px;
+        }
+
+        tbody {
+            td {
+                padding-top: 15px;
+            }
+        }
+
+        input {
+            background: transparent;
+            border: 0;
+            color: $white;
+            width: 60%;
+            font-style: italic;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: $white;
+            opacity: 1;
+            font-size: 16px;
+        }
+
+    }
+
+
+
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+        img {
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: transparent;
+            border: 0;
+        }
+    }
+
+
+
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}

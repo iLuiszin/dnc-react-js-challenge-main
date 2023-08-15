@@ -1,0 +1,89 @@
+@use '../../sass/variables' as *;
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        background-color: white;
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 41px;
+            color: black;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 29px;
+            color: black;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+    &__no-button {
+        background: #0C70F2;
+        border: 0;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $white;
+        width: 170px;
+        height: 55px;
+
+        &:hover {
+            background-color: darken(#0C70F2, 10%);
+        }
+    }
+
+    &__yes-button {
+        background: $white;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+        color: black;
+        width: 170px;
+        height: 55px;
+
+        &:hover {
+            background-color: darken($white, 10%);
+        }
+    }
+
+
+
+
+}
