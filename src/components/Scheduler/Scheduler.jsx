@@ -21,12 +21,12 @@ const Scheduler = ({ tasks }) => {
         if (action === 'delete') {
             setModalData({
                 item: tasks[index],
-                message: 'Deseja excluir esse item?',
+                message: `Deseja excluir o item "${tasks[index].title}"?`,
             });
         } else if (action === 'edit') {
             setModalData({
                 item: tasks[index],
-                message: 'Deseja editar esse item?',
+                message: `Deseja editar o item "${tasks[index].title}"?`,
             });
         }
         setShowModal(true);
