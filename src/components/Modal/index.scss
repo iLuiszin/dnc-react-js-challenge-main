@@ -51,7 +51,7 @@
     }
 
     &__no-button {
-        background: #0C70F2;
+        background: $header-background;
         border: 0;
         border-radius: 10px;
         font-size: 20px;
@@ -62,7 +62,7 @@
         height: 55px;
 
         &:hover {
-            background-color: darken(#0C70F2, 10%);
+            background-color: darken($header-background, 10%);
         }
     }
 

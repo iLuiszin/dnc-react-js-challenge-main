@@ -42,51 +42,53 @@ const Scheduler = ({ tasks }) => {
         <section className="scheduler">
             <h1>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tarefa</th>
-                        <th>Status</th>
-                        <th>Opções</th>
-                    </tr>
-                </thead>
+            <div className="scheduler__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarefa</th>
+                            <th>Status</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    {
-                        tasks.map((task, index) => (
-                            <tr key={index}>
-                                <td>{task.title}</td>
-                                <td>
-                                    {
-                                        <input type="checkbox" checked={task.completed} onChange={() => handleCheckboxChange(index)} />
-                                    }
-                                </td>
-                                <td className='scheduler__icons'>
-                                    <button onClick={() => handleActionClick(index, 'edit')}>
-                                        <img src={editButton} alt="edit" />
-                                    </button>
+                    <tbody>
+                        {
+                            tasks.map((task, index) => (
+                                <tr key={index}>
+                                    <td>{task.title}</td>
+                                    <td>
+                                        {
+                                            <input type="checkbox" checked={task.completed} onChange={() => handleCheckboxChange(index)} />
+                                        }
+                                    </td>
+                                    <td className='scheduler__icons'>
+                                        <button onClick={() => handleActionClick(index, 'edit')}>
+                                            <img src={editButton} alt="edit" />
+                                        </button>
 
-                                    <button onClick={() => handleActionClick(index, 'delete')}>
-                                        <img src={deleteButton} alt="delete" />
-                                    </button>
+                                        <button onClick={() => handleActionClick(index, 'delete')}>
+                                            <img src={deleteButton} alt="delete" />
+                                        </button>
 
-                                </td>
-                            </tr>
-                        ))
-                    }
-                    <tr>
-                        <td><input
-                            type="text"
-                            placeholder="Nova tarefa..."
-                        />
-                        </td>
-                        <td></td>
-                        <td className='scheduler__icons'>
-                            <button><img src={addButton} alt="" /></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                                    </td>
+                                </tr>
+                            ))
+                        }
+                        <tr>
+                            <td><input
+                                type="text"
+                                placeholder="Nova tarefa..."
+                            />
+                            </td>
+                            <td></td>
+                            <td className='scheduler__icons'>
+                                <button><img src={addButton} alt="" /></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
 
             {showModal && (
