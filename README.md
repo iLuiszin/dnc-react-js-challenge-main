@@ -12,6 +12,8 @@
 ### Descrição
 Projeto criado para o desenvolvimento de um To do List fictício, task proposta pela Escola DNC.
 
+![depois](https://github.com/iLuiszin/dnc-react-js-challenge-main/assets/79981019/75dd3c41-924d-4179-9fbf-5cb8662df7e8)
+
 <hr>
 
 ### Interfaces
