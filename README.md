@@ -16,10 +16,6 @@ Projeto criado para o desenvolvimento de um To do List fictício, task proposta 
 
 <hr>
 
-### Interfaces
-
-<hr>
-
 # Estrutura do projeto
 ## Parte 1 - Estrutura 🏗 e Estilização 👨‍🎨
 ### Tecnologias Utilizadas
